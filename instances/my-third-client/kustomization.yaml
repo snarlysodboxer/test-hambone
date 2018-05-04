@@ -1,7 +1,7 @@
 namePrefix: my-third-client-
 
 commonLabels:
-  client: my-other-client
+  client: my-third-client
   myProductVersion: '3.1'
 
 commonAnnotations:
