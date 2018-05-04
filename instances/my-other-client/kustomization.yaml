@@ -2,7 +2,7 @@ namePrefix: my-other-client-
 
 commonLabels:
   client: my-other-client
-  myProductVersion: '3.6'
+  myProductVersion: '3.1'
 
 commonAnnotations:
   TAM: joel
@@ -17,4 +17,4 @@ bases:
 - ../../my-product
 
 patches:
-- ../../versions/3.6.yml
+- ../../versions/3.1.yml
