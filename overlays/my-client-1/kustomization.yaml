@@ -12,6 +12,6 @@ configMapGenerator:
   namespace: default
   behavior: create
   literals:
-  - APP_URL=https://asdf.example.com
+  - APP_URL=https://my-client-1.example.com
   - SOME=thing
 
