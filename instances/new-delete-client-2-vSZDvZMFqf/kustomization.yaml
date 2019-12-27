@@ -1,0 +1,21 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namePrefix: new-delete-client-2-vSZDvZMFqf-
+
+resources:
+- ../../base
+
+patches:
+- ../../versions/3.1.yml
+- my-app/service.yaml
+
+configMapGenerator:
+- name: my-configmap
+  namespace: default
+  behavior: create
+  literals:
+  - APP_URL=https://new-delete-client-2-vSZDvZMFqf.example.com
+  - SOME=thing
+
