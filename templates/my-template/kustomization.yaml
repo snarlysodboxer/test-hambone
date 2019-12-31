@@ -1,0 +1,16 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namePrefix: CHANGEME
+
+resources:
+- ../../base
+
+configMapGenerator:
+- name: my-configmap
+  namespace: default
+  behavior: create
+  literals:
+  - APP_URL=https://CHANGEME.example.com
+  - SOME=thing
