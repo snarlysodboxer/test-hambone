@@ -13,5 +13,5 @@ configMapGenerator:
   behavior: create
   literals:
   - APP_URL=https://my-client-4.example.com
-  - SOME=asdf
+  - SOME=thing
 
